@@ -27,20 +27,52 @@ body {
 
 button {
     font-size: 2rem;
-    padding: 10px;
     margin: 5px 10px;
     color: #fff;
     border: none;
 }
 
-.start-stop-btn {
+button i {
+    padding: 10px;
+}
+.play {
     background-color: green;
 }
 
-.reset-btn {
+.reset {
     background-color: red;
 }
 
 .pause {
     background-color: orange;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+    .timer {
+        font-size: 3rem;
+    }
+    .container {
+        width: 70%;
+    }
+    button {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        width: 100%;
+    }
+    .timer {
+        font-size: 5rem;
+    }
+    .container {
+        width: 60%;
+    }
+    button {
+        font-size: 2rem;
+    }
 }
